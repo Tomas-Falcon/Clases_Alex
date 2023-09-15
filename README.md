@@ -1,1 +1,1 @@
-# Clases_Alex
+Ejercicios que hacemos en la clase de Alex 
