@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+
+/**
+ * 
+ */
+public class ClaseMainControlInterface implements Interface1, Interface2 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Interface1.metodo1();
+		
+		Interface2.metodo1();
+	}
+
+}
+

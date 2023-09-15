@@ -31,4 +31,6 @@ public class ClaseMainControlInterface  implements Interface1, Interface2 {
 
 	
 	
+	
+	
 }

@@ -1,0 +1,11 @@
+
+public interface Interface1 {
+	
+	public static void metodo1() {
+		System.out.println("Metodo 1 Interface 1");
+	}
+	
+	public static void metodo2() {
+		System.out.println("Metodo 2 Interface 1");
+	}
+}
