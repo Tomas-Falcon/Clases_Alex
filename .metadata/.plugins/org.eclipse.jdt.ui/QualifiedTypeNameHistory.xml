@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="Adios.clase1"/>
+    <fullyQualifiedTypeName name="adios.Clase1"/>
+    <fullyQualifiedTypeName name="hola.Clase1"/>
+</qualifiedTypeNameHistroy>
