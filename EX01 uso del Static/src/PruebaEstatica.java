@@ -13,7 +13,7 @@ public class PruebaEstatica {
 
 	public void holaMundo() {
 
-		System.out.println("Una polla");
+ 		System.out.println("Una polla y un pollo");
 
 	}
 
