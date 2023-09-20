@@ -1,10 +1,8 @@
 import java.util.*;
-import java.text.*;
-import java.io.*;
 public class ClaseMain {
 	
 	static Scanner sc = new Scanner(System.in); 
-	static ArrayList <Alumno> alumnos = new ArrayList <> (5);
+	static ArrayList <Alumno> alumnos = new ArrayList <> (1);
 	
 	public static void main(String [] args){
 		menu();
@@ -35,24 +33,16 @@ public class ClaseMain {
 		System.out.println();
 		int alturaInt = Integer.parseInt(altura);
 		
-		//No anda
-		//No anda
-		//No anda
-		//No anda
 		System.out.print("¿Trabaja? S/N");
-		String consulta = "S";
-		//No anda
-		//No anda
-		//No anda
-		//No anda
-		boolean bull = sc.hasNext(consulta);
-		//No anda
-		//No anda
-		//No anda
-		//No anda
-		
+		String consulta = sc.nextLine();
+		boolean bull = false;
+		switch (consulta) {
+		case "S" : bull = true;
+		case "s" : bull = true;
+		case "N" : bull = false;
+		case "n" : bull = false;
+		}
 		System.out.println();
-		
 		Alumno alumno = new Alumno(nombre, edadInt, alturaInt, bull);
 		alumnos.add(alumno);
 		Controlador.ar(alumnos);
