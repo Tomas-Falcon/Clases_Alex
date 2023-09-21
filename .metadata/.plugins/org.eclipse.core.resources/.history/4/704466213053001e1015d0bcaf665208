@@ -1,7 +1,0 @@
-
-public interface Interface1 {
-	
-	public static void metodo1() {
-		System.out.println("Metodo 1 Interface 1")
-	}
-}
