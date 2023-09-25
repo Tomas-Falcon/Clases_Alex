@@ -15,11 +15,11 @@ public class ClaseMian {
 		 *%d --> Enteros
 		 *%f --> Decimales
 		 *%c --> Caracteres
-		 *%b -->  Booleanos
+		 *%b --> Booleanos
 		 *
 		 */
 		 
-		String patron = "Hola %s"; 
+		String patron = "Hola %s";
 		
 		System.out.printf(patron, adios);
 		
@@ -40,7 +40,7 @@ public class ClaseMian {
 		
 		String patron2 = "Me llamo %s tengo %d y mido %f %n";
 		String p1 = "Tomás";
-		int p2 = 20;
+		int p2 = 21;
 		double p3 = 1.84;
 		System.out.printf(patron2,p1,p2,p3);
 	}

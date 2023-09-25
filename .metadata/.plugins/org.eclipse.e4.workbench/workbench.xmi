@@ -239,7 +239,7 @@
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_BupVEFlqEe6yYb9jUYmcyg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ClaseMian.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ClaseMian.java&quot; partName=&quot;ClaseMian.java&quot; title=&quot;ClaseMian.java&quot; tooltip=&quot;EX05 UsandoPrintF/src/ClaseMian.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/EX05 UsandoPrintF/src/ClaseMian.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;6&quot; selectionOffset=&quot;675&quot; selectionTopPixel=&quot;174&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ClaseMian.java&quot; partName=&quot;ClaseMian.java&quot; title=&quot;ClaseMian.java&quot; tooltip=&quot;EX05 UsandoPrintF/src/ClaseMian.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/EX05 UsandoPrintF/src/ClaseMian.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;668&quot; selectionTopPixel=&quot;174&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
@@ -411,7 +411,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_J98pvFY3Ee6gt-5kb2YaRA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_SGrv8FlpEe6yYb9jUYmcyg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_J-OUjVY3Ee6gt-5kb2YaRA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_IUojt1uxEe6ReZ_MxO05CQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_J-OUjVY3Ee6gt-5kb2YaRA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_J98pyVY3Ee6gt-5kb2YaRA" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -419,8 +419,8 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_J98py1Y3Ee6gt-5kb2YaRA" elementId="org.eclipse.ui.workbench.edit">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_SGsXBVlpEe6yYb9jUYmcyg" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.png" tooltip="Undo" enabled="false" command="_J-Ntz1Y3Ee6gt-5kb2YaRA"/>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_SGtlIFlpEe6yYb9jUYmcyg" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.png" tooltip="Redo" enabled="false" command="_J-NuSFY3Ee6gt-5kb2YaRA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_IUv4cFuxEe6ReZ_MxO05CQ" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.png" tooltip="Undo" command="_J-Ntz1Y3Ee6gt-5kb2YaRA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_IUv4cVuxEe6ReZ_MxO05CQ" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.png" tooltip="Redo" enabled="false" command="_J-NuSFY3Ee6gt-5kb2YaRA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_J98pz1Y3Ee6gt-5kb2YaRA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -444,7 +444,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_J98qBlY3Ee6gt-5kb2YaRA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_SGuMMVlpEe6yYb9jUYmcyg" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_J-OUSFY3Ee6gt-5kb2YaRA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_IUv4d1uxEe6ReZ_MxO05CQ" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_J-OUSFY3Ee6gt-5kb2YaRA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_J98qElY3Ee6gt-5kb2YaRA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
