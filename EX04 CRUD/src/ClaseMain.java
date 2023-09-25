@@ -10,7 +10,7 @@ public class ClaseMain {
 	
 	public static void menu(){
 		
-		System.out.print(" Opciones disponibles:\n-Introducir a un nuevo alumno (1)\n-Listar a los alumnos (2)\n-Eliminar alumnos (3)\n-Salir del programa (4)\n-Utiice el numero de opcion correspondiente para eligir (1, 2, 3, 4)\n-Ingrese su eleccion: ");
+		System.out.print(" Opciones disponibles:\n-Introducir a un nuevo alumno (1)\n-Listar a los alumnos (2)\n-Modificar alumnos (3)\n-Eliminar alumnos (4)\n-Salir del programa (5)\n-Utiice el numero de opcion correspondiente para eligir (1, 2, 3, 4, 5)\n-Ingrese su eleccion: ");
 		
 		String eleccion = sc.nextLine();
 		System.out.println("#···································································#");
@@ -37,10 +37,18 @@ public class ClaseMain {
 		String consulta = sc.nextLine();
 		boolean bull = false;
 		switch (consulta) {
-		case "S" : bull = true;
-		case "s" : bull = true;
-		case "N" : bull = false;
-		case "n" : bull = false;
+		case "S" : 
+			bull = true;
+			break;
+		case "s" : 
+			bull = true;
+			break;
+		case "N" : 
+			bull = false;
+			break;
+		case "n" : 
+			bull = false;
+			break;
 		}
 		System.out.println();
 		Alumno alumno = new Alumno(nombre, edadInt, alturaInt, bull);

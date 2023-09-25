@@ -28,6 +28,7 @@ public class Controlador{
 	}
 	
 	public static void salirDelPrograma(){
+		System.out.println("Adios!");
 		System.exit(0);
 	}
 	
@@ -38,8 +39,15 @@ public class Controlador{
 	private static void listarAlumno() {
 		int i = 0;
 		if (alumnos.get(0) != null) {
+			String trabaja = ""; 
+			
 			while (i < alumnos.size()) {
-				System.out.println("El alumno con los datos de nombre, edad altura y trabaja: "+alumnos.get(i).getNombre() + "  " + alumnos.get(i).getEdad() + "  " + alumnos.get(i).getAltura() + "  " + alumnos.get(i).getBull() + " con el indice de: " + i);
+				if (alumnos.get(i).getBull() != false) {
+					trabaja = "Si trabaja";
+				}else {
+					trabaja = "No trabaja";
+				}
+				System.out.println("El alumno con los datos de nombre, edad altura y trabaja: "+alumnos.get(i).getNombre() + "  " + alumnos.get(i).getEdad() + "  " + alumnos.get(i).getAltura() + "  " + trabaja + " con el indice de: " + i);
 				i++;
 			}
 			System.out.println("Sera enviado al menu");
@@ -51,10 +59,16 @@ public class Controlador{
 	}
 	
 	private static void modificarAlumno() {
-		int i = 1;
+		int i = 0;
 		if (alumnos.get(0) != null) {	
 			while (i < alumnos.size()) {
-				System.out.println("El alumno con los datos de nombre, edad altura y trabaja: "+alumnos.get(i).getNombre() + "  " + alumnos.get(i).getEdad() + "  " + alumnos.get(i).getAltura() + "  " + alumnos.get(i).getBull() + " con el indice de: " + i);
+				String trabaja = ""; 
+				if (alumnos.get(i).getBull() == true) {
+					trabaja = "Si trabaja";
+				}else {
+					trabaja = "No trabaja";
+				}
+				System.out.println("El alumno con los datos de nombre, edad altura y trabaja: "+alumnos.get(i).getNombre() + "  " + alumnos.get(i).getEdad() + "  " + alumnos.get(i).getAltura() + "  " + trabaja + " con el indice de: " + i);
 				i++;
 			}
 		}else{
@@ -74,7 +88,14 @@ public class Controlador{
 		if (alumnos.get(0) != null){	
 			System.out.println("Ingrese el indice del alumno que quiere borrar: ");
 			while (i < alumnos.size()) {
-				System.out.println("El alumno con los datos de nombre, edad altura y trabaja: "+alumnos.get(i).getNombre() + "  " + alumnos.get(i).getEdad() + "  " + alumnos.get(i).getAltura() + "  " + alumnos.get(i).getBull() + " con el indice de: " + alumnos.get(i));
+				String trabaja = ""; 
+				if (alumnos.get(i).getBull() == true) {
+					trabaja = "Si trabaja";
+				}else {
+					trabaja = "No trabaja";
+				}
+				System.out.println("El alumno con los datos de nombre, edad altura y trabaja: "+alumnos.get(i).getNombre() + "  " + alumnos.get(i).getEdad() + "  " + alumnos.get(i).getAltura() + "  " + trabaja + " con el indice de: " + i);
+				i++;
 			}
 		}else{
 			System.out.println("Primero se necesitan agregar alumnos, sera enviado al menu");
