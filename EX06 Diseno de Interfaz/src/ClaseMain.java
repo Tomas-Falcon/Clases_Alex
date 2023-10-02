@@ -13,8 +13,6 @@ public class ClaseMain {
 		f.setLayout(null);
 		f.add(boton);
 		
-		
-		
 		f.setVisible(true);
 		
 	}

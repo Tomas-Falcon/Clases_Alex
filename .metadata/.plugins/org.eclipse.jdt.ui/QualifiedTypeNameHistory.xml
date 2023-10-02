@@ -7,4 +7,6 @@
     <fullyQualifiedTypeName name="ClaseMain"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.awt.Button"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+    <fullyQualifiedTypeName name="java.awt.Frame"/>
 </qualifiedTypeNameHistroy>
