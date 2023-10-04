@@ -39,15 +39,15 @@ public class ClaseMain {
 		tamañoTotal = tamañoTotal * 8;
 		//boton.setBounds(x, y, ancho, alto);
 		int x = 50;
-		cajaTexto1.setBounds(x, 50, tamañoTotal, 40);
-		cajaTexto2.setBounds(x, 110, tamañoTotal, 40);
-		cajaTexto3.setBounds(x, 200, tamañoTotal, 40);
-		cajaTexto4.setBounds(x, 290, tamañoTotal, 40);
+		cajaTexto1.setBounds(x, 50, tamañoTotal, 20);
+		cajaTexto2.setBounds(x, 100, tamañoTotal, 20);
+		cajaTexto3.setBounds(x, 150, tamañoTotal, 20);
+		cajaTexto4.setBounds(x, 200, tamañoTotal, 20);
 		int x2 = (x*2) + tamañoTotal;
-		escribirTexto1.setBounds(x2, 50, tamañoTotal, 40);
-		escribirTexto2.setBounds(x2, 110, tamañoTotal, 40);
-		escribirTexto3.setBounds(x2, 200, tamañoTotal, 40);
-		escribirTexto4.setBounds(x2, 290, tamañoTotal, 40);
+		escribirTexto1.setBounds(x2, 50, tamañoTotal, 20);
+		escribirTexto2.setBounds(x2, 100, tamañoTotal, 20);
+		escribirTexto3.setBounds(x2, 150, tamañoTotal, 20);
+		escribirTexto4.setBounds(x2, 200, tamañoTotal, 20);
 		
 		
 		f.setLayout(null);
@@ -62,7 +62,7 @@ public class ClaseMain {
 		f.add(escribirTexto3);
 		f.add(escribirTexto4);
 		
-		f.setBackground(Color.gray);
+		f.setBackground(Color.B);
 		
 		f.setVisible(true);
 		
