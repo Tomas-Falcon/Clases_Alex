@@ -16,7 +16,7 @@ public class ClaseMain {
 			String usuario = "root";
 			String contraseña = "mysql";
 			
-			Conection conn = DriverManager.getConnection(url,usuario,contraseña);
+			Conection conexion = DriverManager.getConnection(url,usuario,contraseña);
 			
 			
 		} catch (Exception e) {

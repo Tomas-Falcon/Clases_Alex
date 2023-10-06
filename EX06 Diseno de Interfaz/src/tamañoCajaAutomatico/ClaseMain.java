@@ -62,7 +62,7 @@ public class ClaseMain {
 		f.add(escribirTexto3);
 		f.add(escribirTexto4);
 		
-		f.setBackground(Color.B);
+		f.setBackground(Color.black);
 		
 		f.setVisible(true);
 		

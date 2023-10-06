@@ -14,8 +14,9 @@ public class ClaseMain extends Frame{
 	 * @param args
 	 */
 	public static void main(String[] args){
-		this.setSize(400, 300);
-		this.setTitle("Hola awt");
+		Frame f = new Frame();
+		f.setSize(400, 300);
+		f.setTitle("Hola awt");
 		
 		Button boton = new Button("Nombre"); 
 		Button boton2 = new Button("Apellido"); 
@@ -24,11 +25,11 @@ public class ClaseMain extends Frame{
 		boton.setLocation(100, 100);
 		
 		boton2.setBounds(100, 150, 200, 40);
-		this.setLayout(null);
-		this.add(boton);
-		this.add(boton2);
+		f.setLayout(null);
+		f.add(boton);
+		f.add(boton2);
 		
-		this.setVisible(true);
+		f.setVisible(true);
 	}
 
 	
