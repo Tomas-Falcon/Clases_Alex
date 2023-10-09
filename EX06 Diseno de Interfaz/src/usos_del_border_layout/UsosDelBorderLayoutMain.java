@@ -25,6 +25,9 @@ public class UsosDelBorderLayoutMain extends Frame{
 		setSize(400, 400);
 				
 		BorderLayout layout = new BorderLayout();
+		
+		layout.setHgap(50);
+		layout.setVgap(50);
 		setLayout(layout);
 		
 		
