@@ -1,37 +1,37 @@
 /**
  * 
  */
-package UsoFlowLayout;
+package usoDelGridLayout;
 
-import java.awt.BorderLayout;
 import java.awt.Button;
 import java.awt.FlowLayout;
 import java.awt.Frame;
-
-import usos_del_border_layout.UsosDelBorderLayoutMain;
+import java.awt.GridLayout;
 
 /**
  * 
  */
-public class UsoFlowLayout extends Frame{
+public class GridLayoutMain extends Frame{
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		UsoFlowLayout interfaz = new UsoFlowLayout();
+		GridLayoutMain ugl = new GridLayoutMain();
 
 	}
-	public UsoFlowLayout () {
-		super("Botones");
+	
+	public GridLayoutMain () {
+		super("UGL");
 		setSize(400, 400);
 
-		FlowLayout layout = new FlowLayout();
+		GridLayout gl = new GridLayout(2,3);
+		
 
-			layout.setHgap(1);
-			layout.setVgap(1);
-			layout.setAlignment(FlowLayout.LEFT);
-		setLayout(layout);
+		//gl.setHgap(1);
+		//gl.setVgap(1);
+		//gl.setAlignment(FlowLayout.RIGHT);
+		setLayout(gl);
 
 
 		Button boton1 = new Button("Boton 1");
@@ -50,4 +50,5 @@ public class UsoFlowLayout extends Frame{
 		add(boton5);
 		setVisible(true);
 	}
+
 }
