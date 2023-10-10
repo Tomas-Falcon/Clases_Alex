@@ -30,10 +30,10 @@ public class ClaseMain {
 			String modificar = "UPDATE tablin SET apellido = \"mn2\" WHERE apellido = 'mn'";
 			String borrar = "delete from tablin where Apellido = \"mn\" ";		
 			stmt.execute(insertar);
-			// stmt.execute(modificar);
+			stmt.execute(modificar);
 			stmt.execute(borrar);
 			//String preguntar = "select * from tablin";
-			
+  
 			
 			System.out.println(conexion.isClosed());
 			
