@@ -29,7 +29,7 @@ public class ClaseMain {
 			String insertar = "insert into tablin values (\"Oswaldo Diego\",\"mn\",22)";
 			String modificar = "UPDATE tablin SET apellido = \"mn2\" WHERE apellido = 'mn'";
 			String borrar = "delete from tablin where Apellido = \"mn\" ";		
-	//		stmt.execute(insertar);
+			stmt.execute(insertar);
 			// stmt.execute(modificar);
 			stmt.execute(borrar);
 			//String preguntar = "select * from tablin";
