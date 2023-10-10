@@ -28,8 +28,8 @@ public class UsoFlowLayout extends Frame{
 
 		FlowLayout layout = new FlowLayout();
 
-		//	layout.setHgap(50);
-		//	layout.setVgap(50);
+			layout.setHgap(1);
+			layout.setVgap(1);
 		setLayout(layout);
 
 
