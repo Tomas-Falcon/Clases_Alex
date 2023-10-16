@@ -23,10 +23,10 @@ public class CalculadoraClaseMain extends Frame {
         topPanel.setLayout(new FlowLayout());
 
         // Botones de suma, resta, multiplicación y división
-        Button sumar = new Button("Sumar");
-        Button restar = new Button("Restar");
-        Button multiplicar = new Button("Multiplicar");
-        Button dividir = new Button("Dividir");
+        Button sumar = new Button("Sumar +");
+        Button restar = new Button("Restar -");
+        Button multiplicar = new Button("Multiplicar *");
+        Button dividir = new Button("Dividir ÷");
 
         topPanel.add(sumar);
         topPanel.add(restar);
@@ -75,7 +75,7 @@ public class CalculadoraClaseMain extends Frame {
         
         Panel surPanel = new Panel();
         surPanel.setLayout(new BorderLayout());
-        TextField tf = new TextField("resultin");
+        TextField tf = new TextField("resultin: ");
         surPanel.add(tf);
         
         setLayout(new BorderLayout());
