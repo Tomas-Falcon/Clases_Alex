@@ -18,4 +18,5 @@
     <fullyQualifiedTypeName name="java.awt.Frame"/>
     <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
     <fullyQualifiedTypeName name="java.awt.TextField"/>
+    <fullyQualifiedTypeName name="com.mysql.jdbc.ResultSet"/>
 </qualifiedTypeNameHistroy>

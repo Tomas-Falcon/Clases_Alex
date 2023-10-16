@@ -20,18 +20,19 @@ public class ClaseMain {
 
 			e.printStackTrace();
 		}
-		try (  Connection conexion = DriverManager.getConnection(url,usuario,contraseña);Statement stmt = conexion.createStatement();){
+		try (Connection conexion = DriverManager.getConnection(url,usuario,contraseña); Statement stmt = conexion.createStatement();){
 			
 			if(conexion != null)
 				System.out.println("Conectin!");
 			
 			System.out.println(conexion);
-			String insertar = "insert into tablin values (\"Oswaldo Diego\",\"mn\",22)";
-			String modificar = "UPDATE tablin SET apellido = \"mn2\" WHERE apellido = 'mn'";
-			String borrar = "delete from tablin where Apellido = \"mn\" ";		
+			String insertar = "insert into tablin values (\"Dani\",\"??\",19)";
+			//String modificar = "UPDATE tablin SET apellido = \"mn2\" WHERE apellido = 'mn'";
+			//String borrar = "delete from tablin where Apellido = \"mn\" ";
 			stmt.execute(insertar);
-			stmt.execute(modificar);
-			stmt.execute(borrar);
+			//stmt.execute(modificar);
+			//stmt.execute(borrar);
+			
 			//String preguntar = "select * from tablin";
   
 			
