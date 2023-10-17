@@ -19,7 +19,7 @@
     <fullyQualifiedTypeName name="escuchame.ClaseEscuchame"/>
     <fullyQualifiedTypeName name="javax.swing.GroupLayout.Alignment"/>
     <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
-    <fullyQualifiedTypeName name="java.awt.Button"/>
-    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
     <fullyQualifiedTypeName name="javax.swing.event.ListSelectionEvent"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+    <fullyQualifiedTypeName name="java.awt.Button"/>
 </qualifiedTypeNameHistroy>
