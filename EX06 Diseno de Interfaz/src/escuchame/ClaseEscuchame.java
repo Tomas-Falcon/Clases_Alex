@@ -72,6 +72,7 @@ public class ClaseEscuchame extends Frame implements ActionListener{
 		
 		
 		/*
+		 // Tu no
 		  var etiqueta2 = e.getSource();
 		String etiqueta3 = etiqueta2.toString();
 		int a = 16, b = 23;
