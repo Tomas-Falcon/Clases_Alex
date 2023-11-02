@@ -1,9 +1,11 @@
+
 import org.xml.sax.*;
 import org.xml.sax.helpers.DefaultHandler;
 import org.xml.sax.helpers.XMLReaderFactory;
 import org.xml.sax.Attributes;
 import java.io.IOException;
 
+@SuppressWarnings("deprecation")
 public class Main {
     public static void main(String[] args) throws SAXException, IOException {
         XMLReader lector = XMLReaderFactory.createXMLReader();
