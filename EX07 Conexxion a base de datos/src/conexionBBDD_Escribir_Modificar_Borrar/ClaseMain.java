@@ -1,4 +1,4 @@
-package app;
+package conexionBBDD_Escribir_Modificar_Borrar;
 import java.sql.*;
 
 /**
@@ -32,8 +32,6 @@ public class ClaseMain {
 			stmt.execute(insertar);
 			//stmt.execute(modificar);
 			//stmt.execute(borrar);
-			
-			//String preguntar = "select * from tablin";
   
 			
 			System.out.println(conexion.isClosed());
