@@ -1,4 +1,4 @@
-package Raton;
+package EventosDeRaton;
 
 import java.awt.Button;
 
