@@ -1,4 +1,7 @@
+package HolaAWT;
+
 import java.awt.*;
+
 public class ClaseMain {
 
 	public static void main(String[] args) {

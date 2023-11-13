@@ -27,7 +27,7 @@ public class EventosTecladoClaseMain extends Frame implements KeyListener{
 	@Override
 	public void keyTyped(KeyEvent e) {
 		System.out.println("keyTyped() "+e.getKeyChar());
-		key.setText("Tecla pulsada "+e.getKeyChar());		
+		key.setText("Tecla pulsada= "+e.getKeyChar());		
 	}
 
 	@Override
