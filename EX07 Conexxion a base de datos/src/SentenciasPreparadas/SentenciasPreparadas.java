@@ -21,35 +21,35 @@ public class SentenciasPreparadas {
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		}
-		try (Connection conexion1 = DriverManager.getConnection(url, usuario, passwd);) {
-			conexion = conexion1;
+		
+			conexion = DriverManager.getConnection(url, usuario, passwd);
 			System.out.println("Conexion establecida!!");
 			
 			PantallaParaIngresarDatos pantallaParaIngresarDatos = new PantallaParaIngresarDatos();
 			
 		} catch (SQLException e) {
 			e.printStackTrace();
-		}
-	}
-
-	public static void insertarDatos(String tabla,  String rutaFoto, String nombre, String apellido, int edad) {
-		
-		String sql = "insert into "+tabla+"(Nombre, Apellido, Edad, Foto) values (?, ?, ?, ?)";
-		PreparedStatement pstmt;
-		try {
-			pstmt = conexion.prepareStatement(sql);
-			pstmt.setString(1, nombre);
-			pstmt.setString(2, apellido);
-			pstmt.setInt(3, edad);
-			pstmt.setString(4, rutaFoto);
-			pstmt.execute();
-		} catch (SQLException e) {
+		} catch (ClassNotFoundException e) {
+			
 			e.printStackTrace();
 		}
 	}
+
+	public static void insertarDatos(String tabla,  String rutaFoto, String nombre, String apellido, Integer edad) {
+	    String sql = "insert into "+tabla+"(Nombre, Apellido, Edad, Foto) values (?, ?, ?, ?)";
+	    PreparedStatement pstmt;
+	    try {
+	        pstmt = conexion.prepareStatement(sql);
+	        pstmt.setString(1, nombre);
+	        pstmt.setString(2, apellido);
+	        pstmt.setInt(3, edad);
+	        pstmt.setString(4, rutaFoto);
+	        pstmt.execute();
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    }
+	}
+
 	
 	public static void ejecutarLotesDeConsultas() {
 		Statement lote;

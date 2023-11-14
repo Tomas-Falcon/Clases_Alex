@@ -50,12 +50,12 @@ public class EventosFocoMain extends Frame implements FocusListener {
 	panel1.setLayout(diegoTieneFlow);
 	panel1.add(lnom = new Label("Nombre:"));
 	panel1.add(tfnom = new TextField(10));
-	panel1.add(msj = new Label(""));
+	panel1.add(msj = new Label("                                            "));
 	
 	panel2.setLayout(diegoTieneFlow);
 	panel2.add(lapellido = new Label("Apellido:"));
 	panel2.add(tapellido = new TextField(10));
-	panel2.add(msj2 = new Label(""));
+	panel2.add(msj2 = new Label("                                           "));
 	
 	setLocationRelativeTo(null);
 	tfnom.addFocusListener(this);
@@ -75,10 +75,10 @@ public class EventosFocoMain extends Frame implements FocusListener {
 		System.out.println("focusGained(FocusEvent e)");
 		if(e.getSource()==tfnom) {
 			this.msj.setText("<--Escribe tu Nombre");
-			this.msj2.setText("");
+			this.msj2.setText("                                              ");
 		}else if(e.getSource()==tapellido) {
 			this.msj2.setText("<--Escribe tu Apellido");
-			this.msj.setText("");
+			this.msj.setText("                                               ");
 		}
 	}
 
