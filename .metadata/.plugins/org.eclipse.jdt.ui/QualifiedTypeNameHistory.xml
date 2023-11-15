@@ -14,7 +14,6 @@
     <fullyQualifiedTypeName name="escuchame.ClaseEscuchame"/>
     <fullyQualifiedTypeName name="javax.swing.GroupLayout.Alignment"/>
     <fullyQualifiedTypeName name="javax.swing.event.ListSelectionEvent"/>
-    <fullyQualifiedTypeName name="java.awt.Color"/>
     <fullyQualifiedTypeName name="ClasesAnonimas.MiVentana"/>
     <fullyQualifiedTypeName name="javax.naming.NamingException"/>
     <fullyQualifiedTypeName name="javax.naming.Context"/>
@@ -46,10 +45,11 @@
     <fullyQualifiedTypeName name="java.awt.GridLayout"/>
     <fullyQualifiedTypeName name="com.mysql.jdbc.ResultSet"/>
     <fullyQualifiedTypeName name="Componentes.UsandoCheckBox"/>
-    <fullyQualifiedTypeName name="java.awt.Checkbox"/>
     <fullyQualifiedTypeName name="java.awt.Frame"/>
     <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
     <fullyQualifiedTypeName name="java.awt.TextField"/>
     <fullyQualifiedTypeName name="java.awt.event.ItemListener"/>
     <fullyQualifiedTypeName name="java.awt.event.ItemEvent"/>
+    <fullyQualifiedTypeName name="java.awt.Checkbox"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
 </qualifiedTypeNameHistroy>

@@ -1,6 +1,7 @@
 package Componentes;
 
 import java.awt.Checkbox;
+import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.Frame;
 import java.awt.TextField;
@@ -47,10 +48,21 @@ public class UsandoCheckBox extends Frame implements ItemListener{
 
 	@Override
 	public void itemStateChanged(ItemEvent e) {
+		Checkbox cb = (Checkbox)(e.getSource());
+		
+		int operaciones = e.getStateChange();
+		System.out.println("Operacion "+operaciones);
 		
 		if(e.getStateChange() == ItemEvent.SELECTED) {
-			System.out.println("Seleccionado");
-			etiqueta.setText("Seleccionado!");
+			System.out.println("Seleccionado "+cb.getLabel());
+			etiqueta.setText("Seleccionado! La "+cb.getLabel());
+			cb.setBackground(Color.green);
+		}
+		
+		if(e.getStateChange() == ItemEvent.DESELECTED) {
+			System.out.println("Deseleccionado "+cb.getLabel());
+			etiqueta.setText("Deseleccionado! La "+cb.getLabel());
+			cb.setBackground(Color.red);
 		}
 		
 	}
