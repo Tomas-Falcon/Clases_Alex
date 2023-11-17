@@ -8,16 +8,16 @@ import java.awt.TextField;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
-public class UsandoCheckBox extends Frame implements ItemListener{
+public class UsandoCheckBoxMain extends Frame implements ItemListener{
 	
 	Checkbox cb1, cb2, cb3;
 	TextField etiqueta, etiqueta2;
 	
 	public static void main(String[] args) {
-		new UsandoCheckBox();
+		new UsandoCheckBoxMain();
 	}
 	
-	public UsandoCheckBox() {
+	public UsandoCheckBoxMain() {
 		super("Usando CheckBox");
 		setSize(500, 160);
 		

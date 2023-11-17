@@ -51,7 +51,7 @@ public class MoverButtonTeclado extends Frame implements KeyListener {
 	@Override
 	public void keyPressed(KeyEvent e) {//este se ejecuta siempre 
 		
-		switch(==e.getKeyCode()) {}
+		switch(e.getKeyCode()) {}
 	}
 
 	@Override
