@@ -44,7 +44,6 @@
     <fullyQualifiedTypeName name="com.mysql.jdbc.ResultSet"/>
     <fullyQualifiedTypeName name="Componentes.UsandoCheckBox"/>
     <fullyQualifiedTypeName name="java.awt.event.ItemEvent"/>
-    <fullyQualifiedTypeName name="java.awt.event.ItemListener"/>
     <fullyQualifiedTypeName name="Componentes.CheckBoxEvolucionMain"/>
     <fullyQualifiedTypeName name="java.awt.TextField"/>
     <fullyQualifiedTypeName name="java.awt.CheckboxGroup"/>
@@ -57,4 +56,5 @@
     <fullyQualifiedTypeName name="java.awt.Label"/>
     <fullyQualifiedTypeName name="java.awt.Choice"/>
     <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
+    <fullyQualifiedTypeName name="java.awt.event.ItemListener"/>
 </qualifiedTypeNameHistroy>

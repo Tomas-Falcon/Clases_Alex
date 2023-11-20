@@ -23,7 +23,7 @@ public class UsandoChoice extends Frame{
 		combo.add("Opcion 1");
 		combo.add("Opcion 2");
 		combo.add("Opcion 3");
-		combo.add("Opcion 4");
+		combo.addItem("Opcion 4");
 		combo.add("Opcion 5");
 		combo.add("Opcion 6");
 				
