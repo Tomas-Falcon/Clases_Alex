@@ -2,7 +2,7 @@ package HolaAWT;
 
 import java.awt.*;
 
-public class ClaseMain {
+public class HolaAWTMain {
 
 	public static void main(String[] args) {
 		Frame f = new Frame();
