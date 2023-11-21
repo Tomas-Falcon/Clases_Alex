@@ -1,6 +1,7 @@
 package Componentes;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class UsandoChoice extends Frame implements ActionListener{
@@ -17,7 +18,7 @@ public class UsandoChoice extends Frame implements ActionListener{
 	
 	public UsandoChoice() {
 		super("Usando Choice");
-		setSize(500,500);
+		setSize(330, 300);
 		setLayout(new FlowLayout());
 		
 		etiqueta = new Label("Valores: ");
@@ -34,6 +35,8 @@ public class UsandoChoice extends Frame implements ActionListener{
 		combo.addItem("Opcion 4");
 		combo.add("Opcion 5");
 		combo.add("Opcion 6");
+		
+		combo.addItemListener(e-> {System.out.println(combo.getSelectedItem());});
 		
 		boton.addActionListener(e-> {
 			System.out.println("El usuario a selecionado la "+combo.getSelectedItem()+" con el indice: "+combo.getSelectedIndex());
@@ -61,6 +64,12 @@ public class UsandoChoice extends Frame implements ActionListener{
 		
 		
 		setVisible(true);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
