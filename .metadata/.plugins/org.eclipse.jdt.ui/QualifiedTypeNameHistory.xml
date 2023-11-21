@@ -37,7 +37,6 @@
     <fullyQualifiedTypeName name="java.awt.event.FocusListener"/>
     <fullyQualifiedTypeName name="java.awt.event.FocusEvent"/>
     <fullyQualifiedTypeName name="EventosFoco.EventosFocoMain"/>
-    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
     <fullyQualifiedTypeName name="java.awt.Panel"/>
     <fullyQualifiedTypeName name="java.awt.GridBagConstraints"/>
     <fullyQualifiedTypeName name="java.awt.GridLayout"/>
@@ -47,7 +46,6 @@
     <fullyQualifiedTypeName name="Componentes.CheckBoxEvolucionMain"/>
     <fullyQualifiedTypeName name="java.awt.TextField"/>
     <fullyQualifiedTypeName name="java.awt.CheckboxGroup"/>
-    <fullyQualifiedTypeName name="java.awt.Button"/>
     <fullyQualifiedTypeName name="java.awt.Checkbox"/>
     <fullyQualifiedTypeName name="java.awt.Color"/>
     <fullyQualifiedTypeName name="Componentes.UsandoCheckBoxMain"/>
@@ -57,4 +55,6 @@
     <fullyQualifiedTypeName name="java.awt.Choice"/>
     <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
     <fullyQualifiedTypeName name="java.awt.event.ItemListener"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+    <fullyQualifiedTypeName name="java.awt.Button"/>
 </qualifiedTypeNameHistroy>
