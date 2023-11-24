@@ -10,7 +10,6 @@
     <fullyQualifiedTypeName name="java.sql.Driver"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="usoDelGridLayout.GridLayoutMain"/>
-    <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
     <fullyQualifiedTypeName name="escuchame.ClaseEscuchame"/>
     <fullyQualifiedTypeName name="javax.swing.GroupLayout.Alignment"/>
     <fullyQualifiedTypeName name="javax.swing.event.ListSelectionEvent"/>
@@ -19,7 +18,6 @@
     <fullyQualifiedTypeName name="javax.naming.Context"/>
     <fullyQualifiedTypeName name="javax.sql.DataSource"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="org.w3c.dom.Document"/>
@@ -37,7 +35,6 @@
     <fullyQualifiedTypeName name="java.awt.event.FocusListener"/>
     <fullyQualifiedTypeName name="java.awt.event.FocusEvent"/>
     <fullyQualifiedTypeName name="EventosFoco.EventosFocoMain"/>
-    <fullyQualifiedTypeName name="java.awt.Panel"/>
     <fullyQualifiedTypeName name="java.awt.GridBagConstraints"/>
     <fullyQualifiedTypeName name="com.mysql.jdbc.ResultSet"/>
     <fullyQualifiedTypeName name="Componentes.UsandoCheckBox"/>
@@ -47,7 +44,6 @@
     <fullyQualifiedTypeName name="java.awt.Checkbox"/>
     <fullyQualifiedTypeName name="java.awt.Color"/>
     <fullyQualifiedTypeName name="Componentes.UsandoCheckBoxMain"/>
-    <fullyQualifiedTypeName name="java.awt.Frame"/>
     <fullyQualifiedTypeName name="java.awt.Label"/>
     <fullyQualifiedTypeName name="java.awt.Choice"/>
     <fullyQualifiedTypeName name="java.awt.event.ItemListener"/>
@@ -56,5 +52,11 @@
     <fullyQualifiedTypeName name="java.awt.Button"/>
     <fullyQualifiedTypeName name="Componentes.UsandoChoice"/>
     <fullyQualifiedTypeName name="java.awt.GridLayout"/>
+    <fullyQualifiedTypeName name="java.awt.Frame"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
+    <fullyQualifiedTypeName name="java.awt.Dimension"/>
+    <fullyQualifiedTypeName name="java.awt.Panel"/>
+    <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
 </qualifiedTypeNameHistroy>
