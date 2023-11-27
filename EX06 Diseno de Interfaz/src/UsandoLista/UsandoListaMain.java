@@ -4,7 +4,11 @@ import java.awt.*;
 
 
 public class UsandoListaMain extends Frame{
+	
 	List lista;
+	Button anadir, eliminar;
+	TextField textin;
+	
 	public static void main(String[] args) {
 		new UsandoListaMain(); 
 	}
@@ -15,18 +19,30 @@ public class UsandoListaMain extends Frame{
 		lista = new List(3);
 		lista.setMultipleMode(true);
 		
-		//Panel panel = new Panel();
-		//panel.setSize(400,250);
-		//panel.setLayout(new BorderLayout());
-		//panel.add(lista, BorderLayout.CENTER);
+		anadir = new Button("Aañadir");
+		eliminar = new Button("Eliminar");
+		textin = new TextField("                ");
+		
+		setLayout(new FlowLayout());
 		
 		
 		for(String a : listaNombres) {
 			lista.add(a);
 		}
 		
-		setLayout(new BorderLayout());
+		anadir.addActionListener(v-> {lista.add(textin.getText());});
+		eliminar.addActionListener(v-> {/*lista.remove(lista.getSelectedIndex());*/ int a[] = lista.getSelectedIndexes();
+		for(int b : a) {System.out.println(b + " " + lista.getItem(b));}});
+		
+		// lista.remove(6);
+		
+		
+		
 		add(lista);
+		add(textin);
+		add(anadir);
+		add(eliminar);
+		
 		
 		setVisible(true);
 	}
