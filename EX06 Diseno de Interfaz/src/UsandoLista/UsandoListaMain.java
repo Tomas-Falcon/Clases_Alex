@@ -18,7 +18,7 @@ public class UsandoListaMain extends Frame{
 		String listaNombres [] = {"Anamaria", "Bruno", "Caro", "Diego", "Tomas", "Micaela", "Nina"};
 		lista = new List(3);
 		lista.setMultipleMode(true);
-		
+		 
 		anadir = new Button("Aañadir");
 		eliminar = new Button("Eliminar");
 		textin = new TextField("                ");
