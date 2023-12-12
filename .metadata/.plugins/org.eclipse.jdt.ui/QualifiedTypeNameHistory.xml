@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
-    <fullyQualifiedTypeName name="usoDelGridLayout.GridLayoutMain"/>
-    <fullyQualifiedTypeName name="escuchame.ClaseEscuchame"/>
-    <fullyQualifiedTypeName name="javax.swing.GroupLayout.Alignment"/>
-    <fullyQualifiedTypeName name="javax.swing.event.ListSelectionEvent"/>
-    <fullyQualifiedTypeName name="ClasesAnonimas.MiVentana"/>
     <fullyQualifiedTypeName name="javax.naming.NamingException"/>
     <fullyQualifiedTypeName name="javax.naming.Context"/>
     <fullyQualifiedTypeName name="javax.sql.DataSource"/>
@@ -43,14 +37,11 @@
     <fullyQualifiedTypeName name="UsandoWindowsListener.DialogoClaseMain"/>
     <fullyQualifiedTypeName name="java.awt.Dialog"/>
     <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="ClaseMain"/>
-    <fullyQualifiedTypeName name="java.awt.Frame"/>
     <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
     <fullyQualifiedTypeName name="java.awt.Panel"/>
     <fullyQualifiedTypeName name="java.awt.GridLayout"/>
-    <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
     <fullyQualifiedTypeName name="java.awt.Checkbox"/>
     <fullyQualifiedTypeName name="java.awt.CheckboxGroup"/>
     <fullyQualifiedTypeName name="java.awt.TextField"/>
@@ -60,4 +51,13 @@
     <fullyQualifiedTypeName name="CalcularFechas"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="mus.Barajeador"/>
+    <fullyQualifiedTypeName name="java.awt.Frame"/>
+    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
+    <fullyQualifiedTypeName name="javax.swing.JLabel"/>
+    <fullyQualifiedTypeName name="javax.swing.JTextField"/>
+    <fullyQualifiedTypeName name="javax.swing.JPanel"/>
+    <fullyQualifiedTypeName name="javax.swing.JButton"/>
+    <fullyQualifiedTypeName name="javax.swing.JList"/>
 </qualifiedTypeNameHistroy>
