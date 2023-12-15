@@ -4,14 +4,14 @@ package sorpresa;
 import java.awt.*;
 
 
-public class sorpricemadafaker extends Frame{
+public class Menues extends Frame{
 
 	public static void main(String[] args) {
-		new sorpricemadafaker();
+		new Menues();
 
 	}
 	
-	sorpricemadafaker() {
+	Menues() {
 		super("Menu item");
 		setSize(400,400);
 		
