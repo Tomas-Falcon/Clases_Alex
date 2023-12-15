@@ -31,6 +31,16 @@ public class sorpricemadafaker extends Frame{
 		
 		Menu menu2 = new Menu("PERACIONES");
 		
+		Menu menu3 = new Menu("SubMenu");
+		
+		MenuItem m1A = new MenuItem("M1A");
+		MenuItem m2B = new MenuItem("M2B");
+		MenuItem m3C = new MenuItem("M3C");
+		
+		menu3.add(m1A);
+		menu3.add(m2B);
+		menu3.add(m3C);
+		
 		menu.add(m1);
 		menu.add(m2);
 		menu.add(m3);
@@ -42,6 +52,7 @@ public class sorpricemadafaker extends Frame{
 		menu2.add(mA);
 		menu2.add(mB);
 		menu2.add(mC);
+		menu.add(menu3);
 		
 		MenuBar menuBar = new MenuBar();
 		menuBar.add(menu);
