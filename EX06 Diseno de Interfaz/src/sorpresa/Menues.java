@@ -1,10 +1,10 @@
 package sorpresa;
 
 
-import java.awt.*;
+import javax.swing.*;
 
 
-public class Menues extends Frame{
+public class Menues extends JFrame{
 
 	public static void main(String[] args) {
 		new Menues();
@@ -15,27 +15,33 @@ public class Menues extends Frame{
 		super("Menu item");
 		setSize(400,400);
 		
-		MenuItem m1 = new MenuItem("Item 1");
-		MenuItem m2 = new MenuItem("Item 2");
-		MenuItem m3 = new MenuItem("Item 3");
-		MenuItem m4 = new MenuItem("Item 4");
-		MenuItem m5 = new MenuItem("Item 5");
-		MenuItem m6 = new MenuItem("Item 6");
-		MenuItem m7 = new MenuItem("Salir");
+		JMenuItem m1 = new JMenuItem("Item 1");
+		JMenuItem m2 = new JMenuItem("Item 2");
+		JMenuItem m3 = new JMenuItem("Item 3");
+		JMenuItem m4 = new JMenuItem("Item 4");
+		JMenuItem m5 = new JMenuItem("Item 5");
+		JMenuItem m6 = new JMenuItem("Item 6");
+		JMenuItem m7 = new JMenuItem("Salir");
 		
-		Menu menu = new Menu("Archivo");
+		JMenu menu = new JMenu("Archivo");
 		
-		MenuItem mA = new MenuItem("Item A");
-		MenuItem mB = new MenuItem("Item B");
-		MenuItem mC = new MenuItem("Item C");
+		JMenuItem mA = new JMenuItem("Item A");
+		JMenuItem mB = new JMenuItem("Item B");
+		JMenuItem mC = new JMenuItem("Item C");
 		
-		Menu menu2 = new Menu("PERACIONES");
+		JMenu menu2 = new JMenu("PERACIONES");
 		
-		Menu menu3 = new Menu("SubMenu");
+		JMenu menu3 = new JMenu("SubMenu");
 		
-		MenuItem m1A = new MenuItem("M1A");
-		MenuItem m2B = new MenuItem("M2B");
-		MenuItem m3C = new MenuItem("M3C");
+		JMenuItem m1A = new JMenuItem("M1A");
+		JMenuItem m2B = new JMenuItem("M2B");
+		JMenuItem m3C = new JMenuItem("M3C");
+		
+		JCheckBoxMenuItem item1 = new JCheckBoxMenuItem("Item 1");
+		JCheckBoxMenuItem item2 = new JCheckBoxMenuItem("Item 2");
+		JCheckBoxMenuItem item3 = new JCheckBoxMenuItem("Item 3");
+		
+		
 		
 		menu3.add(m1A);
 		menu3.add(m2B);
@@ -48,18 +54,23 @@ public class Menues extends Frame{
 		menu.add(m5);
 		menu.add(m6);
 		menu.add(m7);
+		menu.add(item1);
+		menu.add(item2);
+		menu.add(item3);
 		
 		menu2.add(mA);
 		menu2.add(mB);
 		menu2.add(mC);
 		menu.add(menu3);
 		
-		MenuBar menuBar = new MenuBar();
+		m7.addActionListener(v-> {System.exit(0);});
+		
+		JMenuBar menuBar = new JMenuBar();
 		menuBar.add(menu);
 		menuBar.add(menu2);
 		
 		
-		setMenuBar(menuBar);
+		setJMenuBar(menuBar);
 		setVisible(true);
 	}
 
