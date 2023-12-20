@@ -45,7 +45,7 @@ public class Menues extends JFrame{
 		JMenuItem mC = new JMenuItem("Item C");
 		JTextArea textarea = new JTextArea(4,30);
 		textarea.setComponentPopupMenu(popup);
-		add(textarea);
+		add(textarea);//borrar
 		JMenu menu2 = new JMenu("PERACIONES");
 		
 		JMenu menu3 = new JMenu("SubMenu");
