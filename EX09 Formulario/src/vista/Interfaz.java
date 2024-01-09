@@ -1,6 +1,7 @@
 package vista;
 
 import java.awt.GridLayout;
+import java.io.*;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -17,8 +18,8 @@ import modelo.Provincia;
 public class Interfaz extends JFrame {
 	 
 	
-	Choice choiceProvincias; 
-	Choice choiceLocalidad;
+	Choice choiceProvincias, choiceLocalidad;
+	JTextField nombreJT, apellidoJT;
 	
 
 	Controlador contro = new Controlador();
@@ -33,8 +34,8 @@ public class Interfaz extends JFrame {
 
         JPanel panel = new JPanel(new GridLayout(5,1)); 
 
-        JPanel panel1 = crearPaneltextFild("Nombre:");
-        JPanel panel2 = crearPaneltextFild("Apellido:");
+        JPanel panel1 = crearPaneltextFild("Nombre:",1);
+        JPanel panel2 = crearPaneltextFild("Apellido:",2);
         
         JPanel panel3 = crearPanelChoice("Provincia:",1);
         JPanel panel4 = crearPanelChoice("Localidad:",2);
@@ -55,16 +56,42 @@ public class Interfaz extends JFrame {
         panel.add(panel4);
         
         JButton agregar = new JButton("Agregar a la agenda");
+        agregar.addActionListener(v-> {
+        	String nombre = nombreJT.getText().trim();
+        	String apellido = apellidoJT.getText().trim();
+        	String provincia = (String) choiceProvincias.getSelectedItem().trim();
+        	String localidad = (String) choiceLocalidad.getSelectedItem().trim();
+        	 // Ruta del archivo
+            String rutaArchivo = "registros.txt";
+
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(rutaArchivo, true))) {
+                // Escribir en el archivo
+                
+                writer.write("Nombre: " + nombre + "\n");
+                writer.write("Apellido: " + apellido + "\n");
+                writer.write("Provincia: " + provincia + "\n");
+                writer.write("Localidad: " + localidad + "\n");
+                writer.write("\n\n------------------------\n");
+                System.out.println("Registro guardado en el archivo.");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }});
         panel.add(agregar);
         add(panel);
-
+        
         setVisible(true);
     }
 
-    private JPanel crearPaneltextFild(String texto) {
+    private JPanel crearPaneltextFild(String texto, int a) {
         JPanel panel = new JPanel(new GridLayout(1, 2));
         panel.add(new JLabel(texto));
-        panel.add(new JTextField("            "));
+        JTextField textin = new JTextField("            ");
+        if(a == 1) {
+        	nombreJT = textin;
+        }else {
+        	apellidoJT = textin;
+        }
+        panel.add(textin);
         return panel;
     }
     
