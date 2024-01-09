@@ -4,7 +4,7 @@ public class Localidad {
 	
 	private Provincia provincia;
 	private String nombre, provinciaNombre;
-	
+	//Ya no se utiliza, esta deprecated
 	public Localidad(Provincia provincia, String nombre) {
 		this.provincia = provincia;
 		this.nombre  = nombre;

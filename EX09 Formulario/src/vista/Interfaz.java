@@ -47,7 +47,7 @@ public class Interfaz extends JFrame {
         choiceProvincias.addItemListener(e -> {
             String provincia = choiceProvincias.getSelectedItem();
             ArrayList<String> localidades = contro.getLocalidades(provincia);
-            choiceLocalidad.removeAll(); // Elimina todos los elementos del Choice
+            choiceLocalidad.removeAll();
             for (String localidad : localidades) {
                 choiceLocalidad.add(localidad);
             }
@@ -61,11 +61,11 @@ public class Interfaz extends JFrame {
         	String apellido = apellidoJT.getText().trim();
         	String provincia = (String) choiceProvincias.getSelectedItem().trim();
         	String localidad = (String) choiceLocalidad.getSelectedItem().trim();
-        	 // Ruta del archivo
-            String rutaArchivo = "registros.txt";
+        
+            String rutaArchivo = "agenda.txt";
 
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(rutaArchivo, true))) {
-                // Escribir en el archivo
+             
                 
                 writer.write("Nombre: " + nombre + "\n");
                 writer.write("Apellido: " + apellido + "\n");
