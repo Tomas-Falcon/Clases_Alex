@@ -3,11 +3,12 @@ package modelo;
 public class Localidad {
 	
 	private Provincia provincia;
-	private String nombre;
+	private String nombre, provinciaNombre;
 	
 	public Localidad(Provincia provincia, String nombre) {
 		this.provincia = provincia;
-		this.nombre  =nombre;
+		this.nombre  = nombre;
+		provinciaNombre = provincia.getNombre();
 	}
 
 	/**
@@ -22,6 +23,10 @@ public class Localidad {
 	 */
 	public final String getNombre() {
 		return nombre;
+	}
+	
+	public final String getProvinciaNombre() {
+		return provinciaNombre;
 	}
 
 }
