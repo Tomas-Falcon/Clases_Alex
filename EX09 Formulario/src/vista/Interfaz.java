@@ -1,16 +1,14 @@
 package vista;
 
-import java.awt.FlowLayout;
 import java.awt.GridLayout;
-import java.awt.List;
-import java.util.ArrayList;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import java.awt.Choice;
+import java.util.ArrayList;
 
 import controlador.Controlador;
 import modelo.Localidad;
@@ -19,8 +17,8 @@ import modelo.Provincia;
 public class Interfaz extends JFrame {
 	 
 	
-	List listaProvincias; 
-	List listaLocalidad;
+	Choice choiceProvincias; 
+	Choice choiceLocalidad;
 	
 	
 	
@@ -49,20 +47,23 @@ public class Interfaz extends JFrame {
         JPanel panel1 = crearPaneltextFild("Nombre:");
         JPanel panel2 = crearPaneltextFild("Apellido:");
         
-        JPanel panel3 = crearPanelList("Provincia:",1);
-        JPanel panel4 = crearPanelList("Localidad:",2);
+        JPanel panel3 = crearPanelChoice("Provincia:",1);
+        JPanel panel4 = crearPanelChoice("Localidad:",2);
         
         panel.add(panel1);
         panel.add(panel2);
         panel.add(panel3);
         
-        listaProvincias.addActionListener(v-> {String provincia = listaProvincias.getSelectedItem(); ArrayList<String> localidades = contro.getLocalidades(provincia);  while (listaLocalidad.getItemCount() > 0) {
-        	listaLocalidad.remove(0);
-        } for(String localidad : localidades) {listaLocalidad.add(localidad);}});
-        
+        choiceProvincias.addItemListener(e -> {
+            String provincia = choiceProvincias.getSelectedItem();
+            ArrayList<String> localidades = contro.getLocalidades(provincia);
+            choiceLocalidad.removeAll(); // Elimina todos los elementos del Choice
+            for (String localidad : localidades) {
+                choiceLocalidad.add(localidad);
+            }
+        });
+
         panel.add(panel4);
-        
-        
         
         JButton agregar = new JButton("Agregar a la agenda");
         panel.add(agregar);
@@ -78,23 +79,22 @@ public class Interfaz extends JFrame {
         return panel;
     }
     
-    private JPanel crearPanelList(String texto, int a) {
+    private JPanel crearPanelChoice(String texto, int a) {
         JPanel panel = new JPanel(new GridLayout(1, 2));
         panel.add(new JLabel(texto));
-        List lista = new List();
+        Choice choice = new Choice();
         if(a == 1) {
         	
         	String[]  provincias = contro.getProvincias();
         	
         	for (String provincia : provincias) {
-        		lista.add(provincia);
+        		choice.add(provincia);
         	}
-        	listaProvincias = lista;
-        }else {
-        	listaLocalidad = lista;
+        	choiceProvincias = choice;
+        } else {
+        	choiceLocalidad = choice;
         }
-        panel.add(lista);
+        panel.add(choice);
         return panel;
     }
-   
 }

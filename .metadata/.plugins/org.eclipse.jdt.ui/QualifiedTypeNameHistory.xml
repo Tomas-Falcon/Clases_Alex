@@ -42,7 +42,6 @@
     <fullyQualifiedTypeName name="javax.swing.JMenuItem"/>
     <fullyQualifiedTypeName name="javax.swing.JPopupMenu"/>
     <fullyQualifiedTypeName name="java.awt.TextArea"/>
-    <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
     <fullyQualifiedTypeName name="javax.swing.JTextArea"/>
     <fullyQualifiedTypeName name="vista.interfaz"/>
     <fullyQualifiedTypeName name="vista.Interfaz"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="modelo.Provincia"/>
     <fullyQualifiedTypeName name="modelo.Localidad"/>
+    <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
 </qualifiedTypeNameHistroy>
