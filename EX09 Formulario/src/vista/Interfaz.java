@@ -20,19 +20,8 @@ public class Interfaz extends JFrame {
 	Choice choiceProvincias; 
 	Choice choiceLocalidad;
 	
-	
-	
-	
-	
-	Provincia madrid = new Provincia("1");
-	Provincia santander = new Provincia("2");
-	Localidad localidad1 = new Localidad(madrid, "Getafe");
-	Localidad localidad2 = new Localidad(madrid, "Parla");
-	Localidad localidad3 = new Localidad(santander, "Cantabria");
-	
-	
-	
-	Controlador contro = new Controlador(madrid, santander,localidad1,localidad2,localidad3);
+
+	Controlador contro = new Controlador();
     
 	public static void main(String[] args) {
         new Interfaz();
