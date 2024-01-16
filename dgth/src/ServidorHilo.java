@@ -23,25 +23,43 @@ public class ServidorHilo extends Thread {
 
 	@Override
 	public void run() {
-		String nombre = null;
-		String mensaje = null;
-		salida.println("Hola, te has conectado al servidor");
-		salida.println("Escribe tu nombre");
-		try {
-			nombre = entrada.readLine();
-			System.out.println(nombre + " se ha conectado");
-			salida.println("Escribe, esto es un chat");
-			do {
-				mensaje = entrada.readLine();
-				System.out.println(nombre + ": " + mensaje);
-			} while (!mensaje.equalsIgnoreCase("Adios"));
-			System.out.println(nombre + " se ha desconectado");
-			salida.println("Te has desconectado del servidor");
-			cliente.close();
-			entrada.close();
-			salida.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+	    String nombre = null;
+	    String mensaje = null;
+	    try {
+	        nombre = entrada.readLine();
+	        Servidor.enviarMensajeATodos(nombre + " se ha conectado");
+
+	        do {
+	            mensaje = entrada.readLine();
+	            String usuario[] = mensaje.split(";");
+	            nombre = usuario[0];
+	            mensaje = usuario[1];
+	            String mensajeA_Cliente = nombre + ": " + mensaje;
+
+	            // Enviar el mensaje a todos los clientes
+	            Servidor.enviarMensajeATodos(mensajeA_Cliente);
+	        } while (!mensaje.equalsIgnoreCase("Adios"));
+
+	        Servidor.enviarMensajeATodos(nombre + " se ha desconectado");
+	        salida.println("Te has desconectado del servidor");
+
+	        cliente.close();
+	        entrada.close();
+	        salida.close();
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    }
 	}
+
+	
+	public void enviarMensaje(String mensaje) {
+		   salida.println(mensaje);
+    }
+	
 }
+
+
+
+
+    
+
