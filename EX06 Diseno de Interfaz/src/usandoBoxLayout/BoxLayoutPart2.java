@@ -39,16 +39,17 @@ public class BoxLayoutPart2 {
 		panel2.setBorder(BorderFactory.createTitledBorder("CENTER"));
 		panel3.setBorder(BorderFactory.createTitledBorder("RIGHT"));
 		
-		//BoxLayout caja = new BoxLayout(panel1, BoxLayout.PAGE_AXIS);
-		//panel1.setLayout(caja);
+		BoxLayout caja = new BoxLayout(panel1, BoxLayout.PAGE_AXIS);
+		panel1.setLayout(caja);
 		
 		panel1.add(jb1);
 		panel1.add(jb2);
 		
+		BoxLayout caja3 = new BoxLayout(panel3, BoxLayout.Y_AXIS);
+		panel3.setLayout(caja3);
 		
-		
-		//BoxLayout caja2 = new BoxLayout(panel2, BoxLayout.LINE_AXIS);
-		//panel2.setLayout(caja2);
+		BoxLayout caja2 = new BoxLayout(panel2, BoxLayout.LINE_AXIS);
+		panel2.setLayout(caja2);
 		
 		panel2.add(jb4);
 		panel2.add(jb3);	
