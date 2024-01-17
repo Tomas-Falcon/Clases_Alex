@@ -1,71 +1,89 @@
 import java.awt.Color;
+import java.awt.FlowLayout;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JTextArea;
+import javax.swing.SwingUtilities;
+import javax.swing.SwingWorker;
 
-public class Servidor extends JFrame{
-    private static List<ServidorHilo> hilos = new ArrayList<>();
-    static ServerSocket servidorCerrar;
-    
+public class Servidor extends JFrame {
+    private static final List<ServidorHilo> hilos = new ArrayList<>();
+    private static ServerSocket servidorCerrar;
 
-    private JButton cerrar; 
-    private JTextArea estado;
-    
     public static void main(String[] args) {
-    	new Servidor();
-        
+        SwingUtilities.invokeLater(() -> new Servidor());
     }
 
-    public Servidor(){
-    	 setTitle("Servidor");
-         setSize(400, 300);
-         
-         estado = new JTextArea();
-         
-         iniciarServer();
-         
-         add(cerrar);
-         add(estado);
-         setVisible(true);
-    }
-    
-    public static void enviarMensajeATodos(String mensaje) {
-        // Iterar sobre todos los hilos y enviar el mensaje a cada cliente
-        for (ServidorHilo hilo : hilos) {
-            hilo.enviarMensaje(mensaje);
-            
-        }
-    }
-    
-    public void iniciarServer() {
-    	try {
+    public Servidor() {
+        setTitle("Servidor");
+        setSize(400, 300);
+        setLayout(new FlowLayout());
+
+        JButton cerrar = new JButton("Cerrar Servidor");
+        JTextArea estado = new JTextArea("          ");
+
+        add(cerrar);
+        add(estado);
+
+        try {
             ServerSocket servidor = new ServerSocket(8000);
             servidorCerrar = servidor;
-            while (true) {
-                ServidorHilo hilo = new ServidorHilo(servidor);
-                hilos.add(hilo); // Agregar el hilo a la lista
-                hilo.start();
-            }
+
+            cerrar.addActionListener(v -> {
+                new SwingWorker<Void, Void>() {
+                    @Override
+                    protected Void doInBackground() throws Exception {
+                        try {
+                            servidorCerrar.close();
+                            estado.setBackground(Color.red);
+                            estado.setText("Conexion cerrada");
+                            Thread.sleep(5000);
+                            System.exit(0);
+                        } catch (IOException | InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                        return null;
+                    }
+                }.execute();
+            });
+
+            SwingWorker<Void, Void> worker = new SwingWorker<Void, Void>() {
+                @Override
+                protected Void doInBackground() throws Exception {
+                    if (!servidorCerrar.isClosed()) {
+                        SwingUtilities.invokeLater(() -> {
+                            estado.setBackground(Color.green);
+                            estado.setText("Conexion abierta");
+                        });
+                    } else {
+                        SwingUtilities.invokeLater(() -> {
+                            estado.setBackground(Color.red);
+                            estado.setText("Conexion cerrada");
+                        });
+                    }
+
+                    while (true) {
+                        ServidorHilo hilo = new ServidorHilo(servidor);
+                        hilos.add(hilo);
+                        hilo.start();
+                    }
+                }
+            };
+
+            worker.execute(); // Ejecutar el SwingWorker en segundo plano
+            setVisible(true);
         } catch (IOException e) {
             e.printStackTrace();
         }
-        
-        if(!servidorCerrar.isClosed()) {cerrar = new JButton("Cerrar coneccion");
-       	 estado.setBackground(Color.green); estado.setText("Conexion abierta");        	 
-        }else{
-        	cerrar = new JButton("Abrir coneccion"); 
-        	estado.setBackground(Color.red); estado.setText("Conexion cerrada");}
-        
-        cerrar.addActionListener(v-> {try {
-			servidorCerrar.close();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}});
+    }
+
+    public static void enviarMensajeATodos(String mensaje) {
+        for (ServidorHilo hilo : hilos) {
+            hilo.enviarMensaje(mensaje);
+        }
     }
 }
