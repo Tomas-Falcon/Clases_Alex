@@ -11,6 +11,11 @@ import javax.swing.JTextArea;
 public class Servidor extends JFrame{
     private static List<ServidorHilo> hilos = new ArrayList<>();
     static ServerSocket servidorCerrar;
+    
+
+    private JButton cerrar; 
+    private JTextArea estado;
+    
     public static void main(String[] args) {
     	new Servidor();
         
@@ -19,28 +24,11 @@ public class Servidor extends JFrame{
     public Servidor(){
     	 setTitle("Servidor");
          setSize(400, 300);
-         try {
-             ServerSocket servidor = new ServerSocket(8000);
-             servidorCerrar = servidor;
-             while (true) {
-                 ServidorHilo hilo = new ServidorHilo(servidor);
-                 hilos.add(hilo); // Agregar el hilo a la lista
-                 hilo.start();
-             }
-         } catch (IOException e) {
-             e.printStackTrace();
-         }
-         JButton cerrar = new JButton("Cerrar Servidor");
-         JTextArea estado = new JTextArea();
-         if(!servidorCerrar.isClosed()) {
-        	 estado.setBackground(Color.green); estado.setText("Conexion abierta");        	 
-         }else{estado.setBackground(Color.red); estado.setText("Conexion cerrada");}
-         cerrar.addActionListener(v-> {try {
-			servidorCerrar.close();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}});
+         
+         estado = new JTextArea();
+         
+         iniciarServer();
+         
          add(cerrar);
          add(estado);
          setVisible(true);
@@ -52,5 +40,32 @@ public class Servidor extends JFrame{
             hilo.enviarMensaje(mensaje);
             
         }
+    }
+    
+    public void iniciarServer() {
+    	try {
+            ServerSocket servidor = new ServerSocket(8000);
+            servidorCerrar = servidor;
+            while (true) {
+                ServidorHilo hilo = new ServidorHilo(servidor);
+                hilos.add(hilo); // Agregar el hilo a la lista
+                hilo.start();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+        if(!servidorCerrar.isClosed()) {cerrar = new JButton("Cerrar coneccion");
+       	 estado.setBackground(Color.green); estado.setText("Conexion abierta");        	 
+        }else{
+        	cerrar = new JButton("Abrir coneccion"); 
+        	estado.setBackground(Color.red); estado.setText("Conexion cerrada");}
+        
+        cerrar.addActionListener(v-> {try {
+			servidorCerrar.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}});
     }
 }
