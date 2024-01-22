@@ -1,6 +1,7 @@
 package usandoBoxLayout;
 
 
+import java.awt.Component;
 import java.awt.FlowLayout;
 
 import javax.swing.BorderFactory;
@@ -27,7 +28,15 @@ public class BoxLayoutPart2 {
 		JButton jb5 = new JButton("5");
 		JButton jb6 = new JButton("6");
 		
-
+		jb1.setAlignmentX(Component.LEFT_ALIGNMENT);
+		jb2.setAlignmentX(Component.LEFT_ALIGNMENT);
+		
+		jb3.setAlignmentX(Component.CENTER_ALIGNMENT);
+		jb4.setAlignmentX(Component.CENTER_ALIGNMENT);
+		
+		jb5.setAlignmentX(Component.RIGHT_ALIGNMENT);
+		jb6.setAlignmentX(Component.RIGHT_ALIGNMENT);
+		
 		JFrame frame =  new JFrame("Usando BoxLayout alineado");
 		frame.setSize(400,150);
 		frame.setLocationRelativeTo(null);
@@ -48,7 +57,7 @@ public class BoxLayoutPart2 {
 		BoxLayout caja3 = new BoxLayout(panel3, BoxLayout.Y_AXIS);
 		panel3.setLayout(caja3);
 		
-		BoxLayout caja2 = new BoxLayout(panel2, BoxLayout.LINE_AXIS);
+		BoxLayout caja2 = new BoxLayout(panel2, BoxLayout.Y_AXIS);
 		panel2.setLayout(caja2);
 		
 		panel2.add(jb4);
