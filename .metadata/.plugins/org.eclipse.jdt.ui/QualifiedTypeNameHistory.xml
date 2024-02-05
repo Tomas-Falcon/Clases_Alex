@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="UsandoWindowsListener.DialogoClaseMain"/>
-    <fullyQualifiedTypeName name="java.awt.Dialog"/>
-    <fullyQualifiedTypeName name="ClaseMain"/>
-    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
-    <fullyQualifiedTypeName name="java.awt.Panel"/>
-    <fullyQualifiedTypeName name="java.awt.Checkbox"/>
-    <fullyQualifiedTypeName name="java.awt.TextField"/>
-    <fullyQualifiedTypeName name="java.awt.Choice"/>
-    <fullyQualifiedTypeName name="CalcularFechas"/>
-    <fullyQualifiedTypeName name="mus.Barajeador"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="javax.swing.DefaultListModel"/>
-    <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
     <fullyQualifiedTypeName name="java.awt.MenuItem"/>
     <fullyQualifiedTypeName name="java.awt.Menu"/>
     <fullyQualifiedTypeName name="java.awt.MenuBar"/>
@@ -59,5 +47,17 @@
     <fullyQualifiedTypeName name="javax.swing.BorderFactory"/>
     <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
     <fullyQualifiedTypeName name="java.awt.Component"/>
+    <fullyQualifiedTypeName name="usando_tree_selector.UsandoTreeSelector"/>
     <fullyQualifiedTypeName name="javax.swing.JFrame"/>
+    <fullyQualifiedTypeName name="javax.swing.JTree"/>
+    <fullyQualifiedTypeName name="javax.swing.JScrollPane"/>
+    <fullyQualifiedTypeName name="javax.swing.border.Border"/>
+    <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="javax.swing.tree.DefaultTreeCellRenderer"/>
+    <fullyQualifiedTypeName name="javax.swing.JComboBox"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicTreeUI.TreeCancelEditingAction"/>
+    <fullyQualifiedTypeName name="javax.swing.tree.TreeCellEditor"/>
+    <fullyQualifiedTypeName name="javax.swing.DefaultCellEditor"/>
+    <fullyQualifiedTypeName name="javax.swing.tree.DefaultTreeCellEditor"/>
 </qualifiedTypeNameHistroy>
