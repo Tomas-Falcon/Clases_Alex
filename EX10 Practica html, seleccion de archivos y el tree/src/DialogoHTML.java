@@ -12,12 +12,13 @@ public class DialogoHTML extends JFrame {
     private static final long serialVersionUID = 1L;
     private JButton btBotonsin;
     private JTextField tfcaja;
+    private String rutaCompleta1;
 
     DialogoHTML() {
         super("Dialogo HTML");
         setSize(400, 300);
 
-        tfcaja = new JTextField("");
+        tfcaja = new JTextField();
         btBotonsin = new JButton("Pulse aqui");
 
         setLayout(new FlowLayout()); 
@@ -26,7 +27,7 @@ public class DialogoHTML extends JFrame {
 
         btBotonsin.addActionListener(e -> {
             String comparar = tfcaja.getText();
-            if (!comparar.isEmpty()) {
+            if (!comparar.trim().isEmpty()) {//no anda
                 buscar();
             } else {
                 arbolin();
@@ -55,6 +56,8 @@ public class DialogoHTML extends JFrame {
         if (nombreArchivoSeleccionado != null) {
             String rutaCompleta = dialogoArchivo.getDirectory() + nombreArchivoSeleccionado;
             tfcaja.setText(rutaCompleta);
+            rutaCompleta1 = rutaCompleta;
+            System.out.println(rutaCompleta);
         }
     }
 
