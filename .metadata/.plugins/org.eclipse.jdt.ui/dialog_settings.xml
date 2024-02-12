@@ -29,6 +29,8 @@
 		<item key="size.y" value="756"/>
 	</section>
 	<section name="quick_assist_proposal_size">
+		<item key="size.x" value="368"/>
+		<item key="size.y" value="882"/>
 	</section>
 	<section name="BreadcrumbItemDropDown">
 	</section>
