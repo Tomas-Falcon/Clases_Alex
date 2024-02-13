@@ -4,6 +4,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
 import javax.swing.JTree;
 
 public class EjemploArbolAleatorioA extends JFrame {
@@ -14,6 +15,7 @@ public class EjemploArbolAleatorioA extends JFrame {
     JTree cerezo;
     JPanel panel;
 
+    
     public static void main(String[] args) {
         new EjemploArbolAleatorioA();
     }
@@ -24,6 +26,8 @@ public class EjemploArbolAleatorioA extends JFrame {
         panel = new JPanel();
         panel.setLayout(new BorderLayout());
         setContentPane(panel);
+        
+        
 
         JButton generar = new JButton("Nuevo");
         generar.addActionListener(e -> {
