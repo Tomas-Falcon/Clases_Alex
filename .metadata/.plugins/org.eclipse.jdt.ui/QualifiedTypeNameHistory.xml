@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="java.awt.Color"/>
-    <fullyQualifiedTypeName name="java.net.ServerSocket"/>
-    <fullyQualifiedTypeName name="java.awt.GridLayout"/>
-    <fullyQualifiedTypeName name="usandoBoxLayout.UsandoBoxLayout"/>
-    <fullyQualifiedTypeName name="javax.swing.BoxLayout"/>
-    <fullyQualifiedTypeName name="javax.swing.BorderFactory"/>
     <fullyQualifiedTypeName name="java.awt.Component"/>
     <fullyQualifiedTypeName name="usando_tree_selector.UsandoTreeSelector"/>
     <fullyQualifiedTypeName name="javax.swing.border.Border"/>
@@ -29,10 +22,8 @@
     <fullyQualifiedTypeName name="EjemploArbolAleatorioA"/>
     <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
     <fullyQualifiedTypeName name="ModeloDeDatos"/>
-    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
     <fullyQualifiedTypeName name="java.awt.Panel"/>
     <fullyQualifiedTypeName name="Examen"/>
-    <fullyQualifiedTypeName name="javax.swing.JPanel"/>
     <fullyQualifiedTypeName name="javax.swing.JTextArea"/>
     <fullyQualifiedTypeName name="javax.swing.JSplitPane"/>
     <fullyQualifiedTypeName name="javax.swing.JTree"/>
@@ -49,7 +40,6 @@
     <fullyQualifiedTypeName name="javax.swing.JMenuBar"/>
     <fullyQualifiedTypeName name="javax.swing.JMenu"/>
     <fullyQualifiedTypeName name="javax.swing.JMenuItem"/>
-    <fullyQualifiedTypeName name="javax.swing.JLabel"/>
     <fullyQualifiedTypeName name="java.nio.file.attribute.FileTime"/>
     <fullyQualifiedTypeName name="java.nio.file.attribute.BasicFileAttributes"/>
     <fullyQualifiedTypeName name="java.awt.event.KeyEvent"/>
@@ -60,4 +50,14 @@
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="UsoTabbedPane.UsandoTabbedPane"/>
+    <fullyQualifiedTypeName name="javax.swing.JTabbedPane"/>
+    <fullyQualifiedTypeName name="javax.swing.SwingConstants"/>
+    <fullyQualifiedTypeName name="javax.swing.JPanel"/>
+    <fullyQualifiedTypeName name="javax.swing.JLabel"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
+    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
+    <fullyQualifiedTypeName name="creandoTabla.CreandoTabla"/>
+    <fullyQualifiedTypeName name="javax.management.modelmbean.InvalidTargetObjectTypeException"/>
+    <fullyQualifiedTypeName name="javax.swing.JTable"/>
 </qualifiedTypeNameHistroy>
