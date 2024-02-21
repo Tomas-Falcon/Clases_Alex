@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.awt.Component"/>
-    <fullyQualifiedTypeName name="usando_tree_selector.UsandoTreeSelector"/>
-    <fullyQualifiedTypeName name="javax.swing.border.Border"/>
-    <fullyQualifiedTypeName name="java.lang.Object"/>
-    <fullyQualifiedTypeName name="javax.swing.tree.DefaultTreeCellRenderer"/>
-    <fullyQualifiedTypeName name="javax.swing.JComboBox"/>
-    <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicTreeUI.TreeCancelEditingAction"/>
     <fullyQualifiedTypeName name="javax.swing.tree.TreeCellEditor"/>
     <fullyQualifiedTypeName name="javax.swing.DefaultCellEditor"/>
     <fullyQualifiedTypeName name="javax.swing.tree.DefaultTreeCellEditor"/>
     <fullyQualifiedTypeName name="DialogoHTML"/>
-    <fullyQualifiedTypeName name="java.awt.Button"/>
     <fullyQualifiedTypeName name="java.awt.TextField"/>
     <fullyQualifiedTypeName name="java.awt.event.WindowAdapter"/>
-    <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
     <fullyQualifiedTypeName name="java.awt.GridBagLayout"/>
     <fullyQualifiedTypeName name="java.awt.FileDialog"/>
     <fullyQualifiedTypeName name="javax.swing.tree.MutableTreeNode"/>
@@ -34,7 +25,6 @@
     <fullyQualifiedTypeName name="javax.swing.JFileChooser"/>
     <fullyQualifiedTypeName name="javax.swing.tree.TreeModel"/>
     <fullyQualifiedTypeName name="javax.swing.JScrollPane"/>
-    <fullyQualifiedTypeName name="javax.swing.JButton"/>
     <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
     <fullyQualifiedTypeName name="java.awt.event.ActionEvent"/>
     <fullyQualifiedTypeName name="javax.swing.JMenuBar"/>
@@ -53,11 +43,21 @@
     <fullyQualifiedTypeName name="UsoTabbedPane.UsandoTabbedPane"/>
     <fullyQualifiedTypeName name="javax.swing.JTabbedPane"/>
     <fullyQualifiedTypeName name="javax.swing.SwingConstants"/>
-    <fullyQualifiedTypeName name="javax.swing.JPanel"/>
-    <fullyQualifiedTypeName name="javax.swing.JLabel"/>
     <fullyQualifiedTypeName name="java.awt.Color"/>
-    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
     <fullyQualifiedTypeName name="creandoTabla.CreandoTabla"/>
     <fullyQualifiedTypeName name="javax.management.modelmbean.InvalidTargetObjectTypeException"/>
     <fullyQualifiedTypeName name="javax.swing.JTable"/>
+    <fullyQualifiedTypeName name="usandoDialogos.UsandoDialogos"/>
+    <fullyQualifiedTypeName name="java.awt.Button"/>
+    <fullyQualifiedTypeName name="javax.swing.JButton"/>
+    <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="usandoJSlider.UsandoJslider"/>
+    <fullyQualifiedTypeName name="javax.swing.JSlider"/>
+    <fullyQualifiedTypeName name="java.awt.Label"/>
+    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="javax.swing.JLabel"/>
+    <fullyQualifiedTypeName name="javax.swing.JPanel"/>
 </qualifiedTypeNameHistroy>

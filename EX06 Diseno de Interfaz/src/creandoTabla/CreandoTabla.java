@@ -24,9 +24,9 @@ public class CreandoTabla extends JFrame{
 	public CreandoTabla() {
 		setSize(400,400);
 		
-		JTable tabla = new JTable();
+		JTable tabla = new JTable(tabla, columnas);
 		add(tabla);
-		tabla.add(columnas, tabla);
+	
 		
 		setVisible(true);
 	}
