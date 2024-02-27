@@ -2,32 +2,27 @@ package creandoTabla;
 
 
 import javax.swing.JFrame;
+import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
-public class CreandoTabla extends JFrame{
-	
-	private Object [][] tabla = {
-			{"Tomas","Falcon","Argentino",21},
-			{"Daniel","Gonzales","Español",20},
-			{"Diego","Manzano","Ecuatoriano",22},
-			{"Manu","Melgar","Español",19},
-			{"Mica","Perez","Argentina",22}
+public class CreandoTabla extends JFrame {
+	private Object [][] datin={
+			{"Belen","Caseres","Alemania",18},
+			{"Mabel","Derecho","españa",18},
+			{"Malu","Toapanta","ecuador",18},
+			{"Lucia","Iglesias","españa",18}
 	};
-	
-	private String[] columnas = {"Nombre","Apellido","Nacionalidad","Edad"};
-	
+	private String [] columnas= {"Nomre","aplido","Pais","Edad"};
 	public static void main(String[] args) {
 		new CreandoTabla();
 	}
-	
-	
-	public CreandoTabla() {
-		setSize(400,400);
+	CreandoTabla(){
 		
-		JTable tabla = new JTable(tabla, columnas);
-		add(tabla);
-	
-		
+		DataModel datitos=new DataModel();
+		JTable tablin=new JTable(datitos);
+		add(new JScrollPane(tablin));
+		setSize(500,500);
 		setVisible(true);
+		
 	}
 }
