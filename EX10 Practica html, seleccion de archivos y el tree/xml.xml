@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+    <elemento1>
+        <subelemento1>Valor1</subelemento1>
+        <subelemento2>Valor2</subelemento2>
+        <subelemento3>
+            <subsubelemento1>Subvalor1</subsubelemento1>
+            <subsubelemento2>Subvalor2</subsubelemento2>
+        </subelemento3>
+    </elemento1>
+    <elemento2>
+        <subelemento3>Valor3</subelemento3>
+        <subelemento4>Valor4</subelemento4>
+    </elemento2>
+</raiz>

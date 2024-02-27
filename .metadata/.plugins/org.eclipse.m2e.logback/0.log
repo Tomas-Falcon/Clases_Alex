@@ -1035,3 +1035,4 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.itextpdf:
 2024-02-26 19:47:12,008 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
 2024-02-27 16:15:18,191 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2024-02-27 16:19:29,686 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-02-27 16:40:05,252 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
